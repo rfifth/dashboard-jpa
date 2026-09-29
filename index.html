@@ -49,13 +49,13 @@
         .btn-link { background-color: #f9fafb; color: #3b82f6; padding: 8px 12px; border-radius: 6px; text-decoration: none; font-size: 12px; font-weight: bold; border: 1px solid #d1d5db; display: inline-block; transition: all 0.2s; white-space: nowrap; }
         .btn-link:hover { background-color: #e5e7eb; border-color: #9ca3af; color: #1d4ed8; }
 
-        /* Upload Module Styles */
+        /* Upload & Notes Module Styles */
         .upload-module { background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
         .form-row { display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 15px; }
         .form-group { flex: 1; min-width: 200px; display: flex; flex-direction: column; }
         .form-group label { font-size: 14px; font-weight: 600; color: #374151; margin-bottom: 8px; }
-        .form-group input, .form-group select { width: 100%; padding: 10px; border: 1px solid #d1d5db; border-radius: 6px; font-size: 14px; font-family: inherit; }
-        .form-group input:focus, .form-group select:focus { outline: none; border-color: #3b82f6; box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1); }
+        .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 10px; border: 1px solid #d1d5db; border-radius: 6px; font-size: 14px; font-family: inherit; }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: #3b82f6; box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1); }
         .btn-submit { background-color: #3b82f6; color: white; border: none; padding: 12px 24px; font-size: 14px; font-weight: bold; border-radius: 6px; cursor: pointer; transition: background 0.2s; margin-top: 10px;}
         .btn-submit:hover { background-color: #2563eb; }
     </style>
@@ -218,6 +218,17 @@
         </div>
     </div>
 
+    <!-- MODUL BAHARU: Ruang Catatan Analisis -->
+    <div class="upload-module" style="margin-top: 20px; border-left: 4px solid #64748b;">
+        <div class="form-row">
+            <div class="form-group">
+                <label for="catatan-isu" style="font-size: 16px;">Catatan Tambahan / Penambahan Isu Baharu</label>
+                <textarea id="catatan-isu" rows="4" placeholder="Taip sebarang penambahan isu berbangkit, pemerhatian, atau catatan tambahan di sini..."></textarea>
+            </div>
+        </div>
+        <button class="btn-submit" onclick="alert('Catatan berjaya direkodkan secara setempat.')">Simpan Catatan</button>
+    </div>
+
     <!-- Maklumat Penceramah -->
     <div class="section-title">Maklumat Penceramah & Urus Setia Sektor Penilaian Kompetensi (SPK) JPA</div>
     <table class="data-table">
@@ -229,11 +240,11 @@
         </thead>
         <tbody>
             <tr>
-                <td><strong>Encik Nik Mohamad Rafiq bin Rosdi</strong><br><span style="color:#6b7280; font-size:12px;">PT(K)OD1C</span></td>
+                <td><strong>Encik Nik Mohamad Rafiq bin Rosdi</strong></td>
                 <td>JKSM Putrajaya</td>
             </tr>
             <tr>
-                <td><strong>Encik Muhammad Haniff bin Huzaizi</strong><br><span style="color:#6b7280; font-size:12px;">PPT(K)OD3A</span></td>
+                <td><strong>Encik Muhammad Haniff bin Huzaizi</strong></td>
                 <td>JKSM, JBPM Perak, INTAN Jln Elmu, INTIM Terengganu, KADA Kelantan</td>
             </tr>
             <tr>
